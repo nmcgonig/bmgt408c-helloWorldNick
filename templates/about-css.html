@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href={{ url_for('static',filename='css/style.css') }}>
+</head>
+
+<body>
+
+    <!-- Quest Image -->
+    <img class="logo" alt="Quest Logo" src="https://terpconnect.umd.edu/~jbono/bmgt408c/images/quest-logo.png">
+    <h1>Nicholas McGonigle</h1>
+    <!-- Start of a basic about me section with some links and lists-->
+    <h2>About Me</h2>
+    <p>Hey! I'm Nicholas McGonigle, but you can call me <em>Nick</em>. I really enjoy puzzles, my favorite kinds are those that require logical deduction, such as <a target="_blank" href="https://sudoku.coach/">Sudoku</a>.
+        I also enjoy being outdoors and have spent lots of time hiking, camping, and kayaking. I really enjoy mind-bending movies with a good twist. Here is a quick list of some of my favorite things.</p>
+    <h3>Favorite Hobbies</h3>
+    <ol class="listspacer">
+        <li>Bouldering (at <a target="_blank" href="https://www.sportrock.com/rio">Sportrock)</a></li>
+        <li>Chess (played on <a target="_blank" href="https://chess.com">chess.com</a>)</li>
+        <li>Spending time with friends</li>
+    </ol>
+    <h3>Favorite Foods</h3>
+    <ul class="listspacer">
+        <li>Pasta</li>
+        <li>Pancakes</li>
+        <li>Milkshakes</li>
+    </ul>
+    <!-- Start of a basic section about my academics-->
+    <h2>Coursework</h2>
+    <p> I am currently a Sophomore at the <em>University of Maryland</em> where I study Computer Science.
+        I went to High School in Montgomery County, Maryland where I entered a STEM program in elementary school which led to my discovery of
+        Computer Science when I first entered the American Computer Science League (ACSL). During my time in ACSL I began my programming with
+        <strong>Python</strong> which I continued through middle school. When I got to high school I was able to take more Computer Science focused classes and
+        added on <strong>Java</strong> and <strong>Kotlin</strong>. Not only did I expand my skill set through classes but through projects I added on <strong>Javascript</strong>. Here is a quick look into my coursework in college.</p>
+    <!-- Table of Coursework and Semester Taken -->
+    <table>
+        <caption>Computer Science Classes</caption>
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Semester Taken</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CMSC 131</td>
+                <td>Exempt</td>
+            </tr>
+            <tr>
+                <td>CMSC 132</td>
+                <td>Exempt</td>
+            </tr>
+            <tr>
+                <td>CMSC 216</td>
+                <td>Freshman Year (Fall)</td>
+            </tr>
+            <tr>
+                <td>CMSC 250</td>
+                <td>Freshman Year (Fall)</td>
+            </tr>
+            <tr>
+                <td>CMSC 330</td>
+                <td>Freshman Year (Spring)</td>
+            </tr>
+            <tr>
+                <td>CMSC 351</td>
+                <td>Freshman Year (Spring)</td>
+            </tr>
+            <tr>
+                <td>CMSC 335</td>
+                <td>Sophmore Year (Fall)</td>
+            </tr>
+            <tr>
+                <td>CMSC 430</td>
+                <td>Sophmore Year (Fall)</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- End of page and link back to /hello route-->
+    <p id="future"> In the future I'm excited to continue my education and expand my skills not just technically but also professionally. I hope to continue expanding my horizons within my hobbies, academics, and career. </p>
+    <p id="return">That's it for the about me click <a href="/hello">here</a> to return to the Hello page.</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Set all font on the page to Helvetica*/
+html, body {
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* Indent all paragraphs on the page*/
+p {
+    text-indent: 2rem;
+    line-height: 1.5;
+}
+
+/* header rules */
+h2{
+    color:rgb(90,0,0);
+    text-indent: 1rem;
+}
+h3{
+    text-indent: 2rem;
+}
+/* special paragraphs */
+p#future {
+    color: rgb(50,50, 50);
+    line-height: 1;
+}
+p#return {
+    text-indent: 0rem;
+}
+
+/* Correct Sizing for the logo */
+img.logo {
+    width:  221px;
+    height: 92px;
+}
+
+/*table rules start */
+table{
+    border: solid rgb(90,0,0);
+}
+th {
+    color: rgb(90,0,0);
+    border: rgb(90,0,0) solid 2px;
+}
+td {
+    padding-right: 2rem;
+}
+/*table rules end */
+/* adjust list spacing */
+.listspacer {
+    line-height: 1.5;
+    margin-left: 1rem;
+}
