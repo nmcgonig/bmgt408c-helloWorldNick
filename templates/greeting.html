@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<div class="container my-5">
+    <h1 class="display-2">A Quick Greeting</h1>
+    <p id='paraID'>Welcome to a page that will get to know you with a few quick questions.
+        First, enter your name so that the page can say Hi back to you! The page will also collect information about
+        some of the classes you have taken. Thanks, for interacting with my webpage. A quick fact about me is below.
+        If you want to learn more about me visit my About Me page <a href='about-css'>Here!</a></p>
+    <button class="btn btn-secondary btn-sm" onclick='changeText()'>Change Text</button>
+    <p class="mt-3" id="favFoods"></p>
+    <form onsubmit="return false;">
+        <input class="rounded" id="nameIn" type="text">
+        <input class="btn btn-primary btn-sm" id="helloSubmit" type="submit" value="Say Hello!(Submit)">
+    </form>
+    <div id="liveAlertPlaceholder"></div>
+    <p>Which CS classes have you taken?</p>
+    <form onsubmit="return false;">
+        <label for="CMSC 131">CMSC 131</label>
+        <input type="checkbox" id="CMSC 131" class="courseSelect">
+        <label for="CMSC 132">CMSC 132</label>
+        <input type="checkbox" id="CMSC 132" class="courseSelect">
+        <label for="CMSC 216">CMSC 216</label>
+        <input type="checkbox" id="CMSC 216" class="courseSelect">
+        <label for="CMSC 251">CMSC 251</label>
+        <input type="checkbox" id="CMSC 251" class="courseSelect">
+        <input class="btn btn-primary btn-sm" type="submit" onclick="coursesAlert()" value="Submit">
+    </form>
+</div>
+    <!--Additional Script for Boostrap Alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src={{ url_for('static',filename='js/main.js') }}></script>
+</body>
+</html>
