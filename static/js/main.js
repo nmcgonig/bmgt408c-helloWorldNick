@@ -12,7 +12,7 @@ function coursesAlert(){
     let starter = "You have Taken: ";
     for (let i of document.getElementsByClassName("courseSelect")){
         if (i.checked) {
-            starter += i.id + ", ";
+            starter += i.name + ", ";
         }
     }
     // removes the last ", "
