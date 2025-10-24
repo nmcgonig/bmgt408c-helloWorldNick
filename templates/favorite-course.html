@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Favorite Course{% endblock %}
+
+{% block body %}
+    <h1>Your Favorite Course</h1>
+    {% if "subject" in request.args and "course_number" in request.args %}
+        <p>You entered your favorite course as: {{ request.args.get("subject")+request.args.get("course_number") }}</p>
+        <a class="btn btn-danger" href="{{ url_for('favCourse') }}">I made a mistake</a>
+    {% else %}
+        <p>You didn't enter a favorite course<br>You can enter one below!</p>
+        <form class="input-group input-group-sm" method="GET" action="{{ url_for('favCourse') }}">
+            <span class="input-group-text">Subject (BMGT)</span>
+            <input type="text" name="subject"><br>
+            <span class="input-group-text">Course Number (eg. 408c)</span>
+            <input type="text" name="course_number">
+            <button class="btn btn-primary" type="submit">Tell me your favorite course!</button>
+        </form>
+    {% endif %}
+
+    <p>You can contact me <a href="{{ url_for('contact')}}">here</a></p>
+{% endblock %}
