@@ -96,7 +96,6 @@
         {% endif %}
     </div>
   <div class="col-12">
-    <div class="form-check">
         {% if action and action in ['create', 'update'] %}
 
       <input class="form-check-input" type="checkbox" value="" id="is_honors" name="is_honors"
@@ -108,9 +107,6 @@
             <br>{{ 'Yes' if student and student['is_honors'] == True else 'No' }}
             {% endif %}
       </label>
-  </div>
-
-
   </div>
   <div class="col-12 text-center">
     {% if action and action in ['create', 'update'] %}
